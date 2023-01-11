@@ -24,4 +24,3 @@ assertEqual(test["t"], 2);
 assertEqual(test["s"], 2);
 assertEqual(test["n"], 1);
 assertEqual(test["q"], undefined);
-``;
