@@ -1,13 +1,14 @@
 const tail = require("../tail.js");
-const eqArrays = require("../eqArrays.js");
-const assertEqual = require("../assertEqual.js");
-const test1 = tail([1, 2, 3, 4, 5, 6]);
-const test2 = tail(["Testing", "The", "Tail", "Function"]);
-const test3 = tail(["Should", "Return", "True"]);
+const assert = require("chai").assert;
 
-assertEqual(test1[2], 4);
-assertEqual(test1.length, 5);
-assertEqual(test2[0], "The");
-assertEqual(test2.length, 3);
-assertEqual(test3[1], "True");
-assertEqual(test3.length, 2);
+describe("#tail", () => {
+  it("Should return [2, 3, 4, 5, 6] from [1, 2, 3, 4, 5, 6]", () => {
+    assert.deepEqual(tail([1, 2, 3, 4, 5, 6]), [2, 3, 4, 5, 6]);
+  });
+  it("Should return ['The', 'Tail', 'Function'] from ['Testing', 'The', 'Tail', 'Function']", () => {
+    assert.deepEqual(tail(["Testing", "The", "Tail", "Function"]), ["The", "Tail", "Function"]);
+  });
+  it("Should return [1, 2, 3, 'Apples'] from ['Bananas', 1, 2, 3, 'Apples']", () => {
+    assert.deepEqual(tail(["Bananas", 1, 2, 3, "Apples"]), [1, 2, 3, "Apples"]);
+  });
+});

@@ -1,6 +1,22 @@
-const assertEqual = require("../assertEqual.js");
+// const assertEqual = require("../assertEqual.js");
+// const assert = require("chai").assert;
+// describe("#assertEqual", () => {
+//   it("Should console.log 'Assertion Failed' from 'Lighthouse Lab', 'BootCamp'", () => {
+//       assert.strictEqual(assertEqual("Lighthouse Labs", "Bootcamp"), false);
+//   });
+//   it("Should console.log 'Assertion Pased' from '1', '1'", () => {
+//     assert.strictEqual(assertEqual(1, 1), true);
+//   });
+//   it("Should console.log 'Assertion Failed' from '1', '23'", () => {
+//     assert.strictEqual(assertEqual(1, 23), false);
+//   });
+//   it("Should console.log ''Assertion Passed from 'Test String', 'Test String'", () => {
+//     assert.strictEqual(assertEqual("Test String", "Test String"), true);
+//   });
+// });
 
-assertEqual("Lighthouse Labs", "Bootcamp"); //Should return "Assertion Failed" message
-assertEqual(1, 1); //Should return "Assertion Passed" message
-assertEqual(1, 23); //Should return "Assertion Failed" message
-assertEqual("Test String", "Test String"); //Should return "Assertion Passed" message
+
+
+
+
+//***** Was told not to test the assertion functions, commenting code out for now
