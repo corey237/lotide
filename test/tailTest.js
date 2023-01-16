@@ -3,11 +3,11 @@ const eqArrays = require("../eqArrays.js");
 const assertEqual = require("../assertEqual.js");
 const test1 = tail([1, 2, 3, 4, 5, 6]);
 const test2 = tail(["Testing", "The", "Tail", "Function"]);
-const test3 = tail(["Should", "Return", "False"]);
+const test3 = tail(["Should", "Return", "True"]);
 
-assertEqual(test1[2], 4); //Pass
-assertEqual(test1.length, 5); //Pass
-assertEqual(test2[0], "The"); //Pass
-assertEqual(test2.length, 3); //Pass
-assertEqual(test3[1], "False"); //Fail
-assertEqual(test3.length, 2); //Fail
+assertEqual(test1[2], 4);
+assertEqual(test1.length, 5);
+assertEqual(test2[0], "The");
+assertEqual(test2.length, 3);
+assertEqual(test3[1], "True");
+assertEqual(test3.length, 2);
