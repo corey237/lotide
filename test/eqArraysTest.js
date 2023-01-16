@@ -7,7 +7,9 @@ const test2 = eqArrays(
   ["Comparing", "String", "Arrays"]
 );
 const test3 = eqArrays(["1", "2", "3"], ["1", "2", 3]);
+const test4 = eqArrays([1, 2, 3, 4, 5], 1, 2, -3, 4, 5);
 
 assertEqual(test1, true); //Arrays match, should return true
 assertEqual(test2, true); //Arrays match, should return false
 assertEqual(test3, false); //Arrays do not match, should return false
+assertEqual(test4, false); //Arrays do not match, should return false
